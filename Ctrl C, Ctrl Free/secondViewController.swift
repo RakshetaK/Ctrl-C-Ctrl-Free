@@ -1,13 +1,13 @@
 //
-//  CameraViewController.swift
+//  secondViewController.swift
 //  Ctrl C, Ctrl Free
 //
-//  Created by KoolPGHome on 7/19/22.
+//  Created by Rui Weng on 2022-07-19.
 //
 
 import UIKit
 
-class CameraViewController: UIViewController {
+class secondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
