@@ -15,6 +15,7 @@
 		B773E77D2886085B003E2B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B773E77C2886085B003E2B5B /* Assets.xcassets */; };
 		B773E7802886085B003E2B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B773E77E2886085B003E2B5B /* LaunchScreen.storyboard */; };
 		B773E7872886089B003E2B5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B773E7812886085B003E2B5B /* Info.plist */; };
+		B7C4DD8A28874EAC00CA125D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4DD8928874EAC00CA125D /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B773E77C2886085B003E2B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B773E77F2886085B003E2B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B773E7812886085B003E2B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C4DD8928874EAC00CA125D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B773E7722886085A003E2B5B /* SceneDelegate.swift */,
 				B773E7742886085A003E2B5B /* ViewController.swift */,
 				B773E7762886085A003E2B5B /* Main.storyboard */,
+				B7C4DD8928874EAC00CA125D /* CameraViewController.swift */,
 				B773E77C2886085B003E2B5B /* Assets.xcassets */,
 				B773E77E2886085B003E2B5B /* LaunchScreen.storyboard */,
 				B773E7812886085B003E2B5B /* Info.plist */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B773E7752886085A003E2B5B /* ViewController.swift in Sources */,
+				B7C4DD8A28874EAC00CA125D /* CameraViewController.swift in Sources */,
 				B773E77B2886085A003E2B5B /* Ctrl_C__Ctrl_Free.xcdatamodeld in Sources */,
 				B773E7712886085A003E2B5B /* AppDelegate.swift in Sources */,
 				B773E7732886085A003E2B5B /* SceneDelegate.swift in Sources */,
