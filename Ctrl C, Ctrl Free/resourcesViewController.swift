@@ -1,5 +1,5 @@
 //
-//  infoViewController.swift
+//  resourcesViewController.swift
 //  Ctrl C, Ctrl Free
 //
 //  Created by Rui Weng on 2022-07-20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class infoViewController: UIViewController {
+class resourcesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

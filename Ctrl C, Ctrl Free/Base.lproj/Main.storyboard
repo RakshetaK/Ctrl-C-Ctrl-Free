@@ -59,32 +59,104 @@
             </objects>
             <point key="canvasLocation" x="-2333" y="-1014"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Resources-->
         <scene sceneID="0vf-BA-umw">
             <objects>
-                <viewController id="qXI-OX-Hyy" customClass="infoViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qXI-OX-Hyy" customClass="resourcesViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVl-2H-dtU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmp-sn-gRF">
-                                <rect key="frame" x="54" y="190" width="306" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Learn more about animal testing in 
-the cosmetic industry </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcN-Tx-Nm4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pqg-Hd-lmn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1016"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inv-qM-leW">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="hcL-mL-AWd"/>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="0.74831850165562919" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="fGP-qN-RWV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIm-iN-N4N">
+                                                <rect key="frame" x="0.0" y="148" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="QXL-kF-3J9"/>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="WoO-xh-8bi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bY-ZJ-tkm">
+                                                <rect key="frame" x="0.0" y="296" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="vA5-oB-FSj"/>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="0.24989652317880795" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="1Kg-13-vPi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-Md-uoq">
+                                                <rect key="frame" x="0.0" y="444" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="1ig-Ju-DxX"/>
+                                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.24518832781456953" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="Zda-VA-63p"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpx-3M-07h">
+                                                <rect key="frame" x="0.0" y="592" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="5UI-fE-j7I"/>
+                                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="WOW-Pd-z5e"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-NY-Ndl">
+                                                <rect key="frame" x="0.0" y="740" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="4lD-2W-BjS"/>
+                                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.74943087748344372" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="Qeh-59-Pgk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-lX-peD">
+                                                <rect key="frame" x="0.0" y="888" width="414" height="128"/>
+                                                <viewLayoutGuide key="safeArea" id="2ax-HB-XnN"/>
+                                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="nGJ-09-84u"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pqg-Hd-lmn" firstAttribute="trailing" secondItem="CKQ-cs-1TX" secondAttribute="trailing" id="Fxu-Gq-Siu"/>
+                                    <constraint firstItem="Pqg-Hd-lmn" firstAttribute="top" secondItem="CKQ-cs-1TX" secondAttribute="top" id="k5C-Xv-1cR"/>
+                                    <constraint firstItem="Pqg-Hd-lmn" firstAttribute="width" secondItem="0kN-EY-iED" secondAttribute="width" id="lFT-EP-poT"/>
+                                    <constraint firstItem="Pqg-Hd-lmn" firstAttribute="leading" secondItem="CKQ-cs-1TX" secondAttribute="leading" id="lPM-kE-88C"/>
+                                    <constraint firstItem="Pqg-Hd-lmn" firstAttribute="bottom" secondItem="CKQ-cs-1TX" secondAttribute="bottom" id="xPF-w6-gQR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CKQ-cs-1TX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0kN-EY-iED"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sQl-xb-bTE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tcN-Tx-Nm4" firstAttribute="trailing" secondItem="sQl-xb-bTE" secondAttribute="trailing" id="4MD-jY-U2I"/>
+                            <constraint firstItem="tcN-Tx-Nm4" firstAttribute="leading" secondItem="sQl-xb-bTE" secondAttribute="leading" id="KQU-yG-CnO"/>
+                            <constraint firstItem="tcN-Tx-Nm4" firstAttribute="top" secondItem="hVl-2H-dtU" secondAttribute="top" id="uPM-dp-BzA"/>
+                            <constraint firstAttribute="bottom" secondItem="tcN-Tx-Nm4" secondAttribute="bottom" id="wrJ-HY-uG6"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1oP-0f-ZWj"/>
+                    <navigationItem key="navigationItem" title="Resources" id="1oP-0f-ZWj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gs5-vs-xby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1422" y="-1014"/>
+            <point key="canvasLocation" x="-1423.1884057971015" y="-1014.5089285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OIl-LQ-bIW">
@@ -120,11 +192,11 @@ the cosmetic industry </string>
             </objects>
             <point key="canvasLocation" x="-2399" y="-1736"/>
         </scene>
-        <!--Information-->
+        <!--Resources-->
         <scene sceneID="XT0-OM-oWU">
             <objects>
                 <navigationController id="fiR-nW-RBx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Information" image="info.circle.fill" catalog="system" id="ztu-cM-cWK"/>
+                    <tabBarItem key="tabBarItem" title="Resources" image="info.circle.fill" catalog="system" id="ztu-cM-cWK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p3j-V3-pvc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
