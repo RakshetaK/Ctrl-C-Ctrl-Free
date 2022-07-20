@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="hqU-gR-UgX">
             <objects>
-                <tabBarController id="1R0-eM-UBW" customClass="tabBarViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="1R0-eM-UBW" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Sl-RY-g4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-2399" y="-2443"/>
         </scene>
-        <!--First View Controller-->
+        <!--View Controller-->
         <scene sceneID="URV-cc-vHB">
             <objects>
-                <viewController id="PRy-zQ-FdJ" customClass="firstViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PRy-zQ-FdJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LD3-CC-T93">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="-3317" y="-997"/>
         </scene>
-        <!--Second View Controller-->
+        <!--View Controller-->
         <scene sceneID="jMa-Qt-mLU">
             <objects>
-                <viewController id="Vsd-vZ-36P" customClass="secondViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vsd-vZ-36P" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="knU-J1-hWJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,27 +59,38 @@
             </objects>
             <point key="canvasLocation" x="-2333" y="-1014"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="0vf-BA-umw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gs5-vs-xby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="qXI-OX-Hyy" customClass="thirdViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qXI-OX-Hyy" customClass="infoViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVl-2H-dtU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmp-sn-gRF">
+                                <rect key="frame" x="54" y="190" width="306" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Learn more about animal testing in 
+the cosmetic industry </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sQl-xb-bTE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1oP-0f-ZWj"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gs5-vs-xby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1422" y="-1014"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="OIl-LQ-bIW">
             <objects>
-                <navigationController id="B9j-EM-ZLa" customClass="firstNavViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CW3-aE-BAb"/>
+                <navigationController id="B9j-EM-ZLa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="CW3-aE-BAb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zFi-Ap-UMd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,11 +103,11 @@
             </objects>
             <point key="canvasLocation" x="-3306" y="-1736"/>
         </scene>
-        <!--Item-->
+        <!--Scan-->
         <scene sceneID="HUQ-Ue-W3w">
             <objects>
-                <navigationController id="Ymr-7h-U5y" customClass="secondNavViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8bK-rg-DK1"/>
+                <navigationController id="Ymr-7h-U5y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scan" image="camera.fill" catalog="system" id="8bK-rg-DK1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xX0-xR-BV8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -109,12 +120,11 @@
             </objects>
             <point key="canvasLocation" x="-2399" y="-1736"/>
         </scene>
-        <!--Item-->
+        <!--Information-->
         <scene sceneID="XT0-OM-oWU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PkE-XL-NM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController id="fiR-nW-RBx" customClass="thirdNavViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ztu-cM-cWK"/>
+                <navigationController id="fiR-nW-RBx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Information" image="info.circle.fill" catalog="system" id="ztu-cM-cWK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p3j-V3-pvc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -123,11 +133,14 @@
                         <segue destination="qXI-OX-Hyy" kind="relationship" relationship="rootViewController" id="vpY-zV-eS5"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PkE-XL-NM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1454" y="-1736"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

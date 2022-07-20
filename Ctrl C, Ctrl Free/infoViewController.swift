@@ -1,13 +1,13 @@
 //
-//  secondViewController.swift
+//  infoViewController.swift
 //  Ctrl C, Ctrl Free
 //
-//  Created by Rui Weng on 2022-07-19.
+//  Created by Rui Weng on 2022-07-20.
 //
 
 import UIKit
 
-class secondViewController: UIViewController {
+class infoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
