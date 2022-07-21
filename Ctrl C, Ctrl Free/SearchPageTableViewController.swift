@@ -9,7 +9,7 @@ import UIKit
 
 class SearchPageTableViewController: UITableViewController, UISearchBarDelegate {
 
-    let data = ["Pacifica Vegan Longwear Eyeliner", "Pacifica Vegan Waterproof Eyeliner", "Pacifica Vegan Care Balm", "Pacifica Enlightened Gloss", "Milani Flora Tinted Lip Balm", "Milani Easy Brow Pencil", "Milani Precision Brow Pencil", "Milani Baked Blush"]
+    let data = ["Pacifica Vegan Longwear Eyeliner", "Pacifica Vegan Waterproof Eyeliner", "Pacifica Vegan Care Balm", "Pacifica Enlightened Gloss", "Milani Flora Tinted Lip Balm", "Milani Easy Brow Pencil", "Milani Precision Brow Pencil", "Milani Baked Blush", "e.l.f. Tinted Lip Oil", "e.l.f. BB Cream SPF 20", "e.l.f. Pure Skin Toner", "e.l.f. Pure Skin Moisturizer", "e.l.f. Blush", "e.l.f. Putty Bronzer", "e.l.f. Putty Blush"]
     var filteredData : [String]!
     @IBOutlet weak var searchBar: UISearchBar!
     
