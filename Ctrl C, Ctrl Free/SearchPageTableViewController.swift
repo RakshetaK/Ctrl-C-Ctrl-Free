@@ -9,7 +9,7 @@ import UIKit
 
 class SearchPageTableViewController: UITableViewController, UISearchBarDelegate {
 
-    let data = ["Pacifica Vegan Longwear Eyeliner", "Pacifica Vegan Waterproof Eyeliner", "Pacifica Vegan Care Balm", "Pacifica Enlightened Gloss", "Milani Flora Tinted Lip Balm", "Milani Easy Brow Pencil", "Milani Precision Brow Pencil", "Milani Baked Blush", "e.l.f. Tinted Lip Oil", "e.l.f. BB Cream SPF 20", "e.l.f. Pure Skin Toner", "e.l.f. Pure Skin Moisturizer", "e.l.f. Blush", "e.l.f. Putty Bronzer", "e.l.f. Putty Blush"]
+    let data = ["Afterglow", "Anastasia Beverly Hills", "Bare Minerals", "Bite Beauty", "Burt's Bees", "Cake", "Cloud Cosmetics", "ColourPop", "e.l.f.", "EOS", "Essence", "Fable and Mane", "Glossier", "Juice Beauty", "Kora Organics", "Milani", "Milk Makeup", "Morphe", "NYX", "Pacifica", "Patchology", "Pure Cosmetics", "Rare Beauty", "Raw Sugar", "SeaChi Organics", "Skylar", "Stellar Beauty", "Tarte", "The Balm", "The Body Shop", "Too Faced", "Truly Beauty", "Urban Decay", "Wet N Wild"]
     var filteredData : [String]!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -39,13 +39,13 @@ class SearchPageTableViewController: UITableViewController, UISearchBarDelegate 
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 75.0
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController{
-            vc.pImage = UIImage(named: data[indexPath.row])!
-            vc.productLabel = data[indexPath.row]
+            vc.pImage = UIImage(named: filteredData[indexPath.row])!
+            vc.productLabel = filteredData[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -53,7 +53,7 @@ class SearchPageTableViewController: UITableViewController, UISearchBarDelegate 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         cell.textLabel?.text = filteredData[indexPath.row]
-        cell.imageView?.image = UIImage(named: data[indexPath.row])
+        cell.imageView?.image = UIImage(named: filteredData[indexPath.row])
         
         return cell
     }
