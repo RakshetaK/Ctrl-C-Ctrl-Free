@@ -17,6 +17,7 @@
 		B773E7802886085B003E2B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B773E77E2886085B003E2B5B /* LaunchScreen.storyboard */; };
 		DE47532C2888B92200357422 /* SearchPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47532B2888B92200357422 /* SearchPageTableViewController.swift */; };
 		DE47532E2888DCB600357422 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47532D2888DCB600357422 /* ProductDetailViewController.swift */; };
+		DE475334288A2DF800357422 /* ProductDetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE475333288A2DF800357422 /* ProductDetailViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B773E7812886085B003E2B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE47532B2888B92200357422 /* SearchPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageTableViewController.swift; sourceTree = "<group>"; };
 		DE47532D2888DCB600357422 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		DE475333288A2DF800357422 /* ProductDetailViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				B773E7722886085A003E2B5B /* SceneDelegate.swift */,
 				B773E7742886085A003E2B5B /* ViewController.swift */,
 				B773E7762886085A003E2B5B /* Main.storyboard */,
+				DE475333288A2DF800357422 /* ProductDetailViewController2.swift */,
 				DE47532D2888DCB600357422 /* ProductDetailViewController.swift */,
 				DE47532B2888B92200357422 /* SearchPageTableViewController.swift */,
 				6344F0C328889F1600EA3F60 /* resourcesViewController.swift */,
@@ -152,6 +155,7 @@
 			files = (
 				B773E7752886085A003E2B5B /* ViewController.swift in Sources */,
 				6344F0C428889F1600EA3F60 /* resourcesViewController.swift in Sources */,
+				DE475334288A2DF800357422 /* ProductDetailViewController2.swift in Sources */,
 				DE47532E2888DCB600357422 /* ProductDetailViewController.swift in Sources */,
 				DE47532C2888B92200357422 /* SearchPageTableViewController.swift in Sources */,
 				B773E77B2886085A003E2B5B /* Ctrl_C__Ctrl_Free.xcdatamodeld in Sources */,

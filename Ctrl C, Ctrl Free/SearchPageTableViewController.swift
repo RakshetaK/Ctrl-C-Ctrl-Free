@@ -9,7 +9,7 @@ import UIKit
 
 class SearchPageTableViewController: UITableViewController, UISearchBarDelegate {
 
-    let data = ["Afterglow", "Anastasia Beverly Hills", "Bare Minerals", "Bite Beauty", "Burt's Bees", "Cake", "Cloud Cosmetics", "ColourPop", "e.l.f.", "EOS", "Essence", "Fable and Mane", "Glossier", "Juice Beauty", "Kora Organics", "Milani", "Milk Makeup", "Morphe", "NYX", "Pacifica", "Patchology", "Pure Cosmetics", "Rare Beauty", "Raw Sugar", "SeaChi Organics", "Skylar", "Stellar Beauty", "Tarte", "The Balm", "The Body Shop", "Too Faced", "Truly Beauty", "Urban Decay", "Wet N Wild"]
+    let data = ["Afterglow", "Anastasia Beverly Hills", "Bare Minerals", "Bite Beauty", "Burt's Bees", "Cake", "Cloud Cosmetics", "ColourPop", "e.l.f.", "EOS", "Essence", "Fable and Mane", "Glossier", "Juice Beauty", "Kora Organics", "Milani", "Milk Makeup", "Morphe", "NYX", "Pacifica", "Patchology", "Pure Cosmetics", "Rare Beauty", "Raw Sugar", "SeaChi Organics", "Skylar", "Stellar Beauty", "Tarte", "The Balm", "The Body Shop", "Too Faced", "Truly Beauty", "Urban Decay", "Wet N Wild", "MAC"]
     var filteredData : [String]!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -43,12 +43,22 @@ class SearchPageTableViewController: UITableViewController, UISearchBarDelegate 
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController{
-            vc.pImage = UIImage(named: filteredData[indexPath.row])!
-            vc.productLabel = filteredData[indexPath.row]
-            self.navigationController?.pushViewController(vc, animated: true)
+        if indexPath.row == 0 {
+           if let vc = (storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController) {
+                vc.pImage = UIImage(named: filteredData[indexPath.row])!
+                vc.productLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        else {
+           if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+               vc.pLabel = filteredData[indexPath.row]
+               self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
+    
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell

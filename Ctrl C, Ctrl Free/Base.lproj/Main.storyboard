@@ -67,6 +67,7 @@
                     <connections>
                         <outlet property="searchBar" destination="yPc-9l-bCe" id="1qi-Pz-lqE"/>
                         <segue destination="Zmy-8H-tTL" kind="show" identifier="detailSegue" id="VLV-pH-QVb"/>
+                        <segue destination="Pln-yx-AZE" kind="show" identifier="detailSegue2" id="rVI-n9-gbw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2M2-in-uVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -122,7 +123,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUp-7S-p5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3226.0869565217395" y="-306.69642857142856"/>
+            <point key="canvasLocation" x="-3836" y="-262"/>
+        </scene>
+        <!--Product Detail View Controller2-->
+        <scene sceneID="FZs-8q-gcE">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailViewController2" id="Pln-yx-AZE" customClass="ProductDetailViewController2" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QaA-l5-N03">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-7Z-6cb">
+                                <rect key="frame" x="95" y="153" width="206" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4cA-Ml-Swd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y2O-af-Prr"/>
+                    <connections>
+                        <outlet property="testLabel" destination="pff-7Z-6cb" id="umO-OT-fow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kog-CU-WQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2723.1884057971015" y="-263.16964285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jMa-Qt-mLU">
