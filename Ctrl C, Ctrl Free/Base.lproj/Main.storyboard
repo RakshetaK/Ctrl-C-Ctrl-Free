@@ -67,7 +67,6 @@
                     <connections>
                         <outlet property="searchBar" destination="yPc-9l-bCe" id="1qi-Pz-lqE"/>
                         <segue destination="Zmy-8H-tTL" kind="show" identifier="detailSegue" id="VLV-pH-QVb"/>
-                        <segue destination="Pln-yx-AZE" kind="show" identifier="detailSegue2" id="rVI-n9-gbw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2M2-in-uVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,10 +88,6 @@
                                 <color key="textColor" red="0.42352941179999998" green="0.34509803919999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUf-av-TSL">
-                                <rect key="frame" x="56" y="190" width="303" height="325"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-21 at 4.45.05 PM" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-XX-5Qh">
                                 <rect key="frame" x="0.0" y="563" width="145" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -111,6 +106,10 @@
                                 <color key="textColor" red="0.42352941179999998" green="0.34509803919999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUf-av-TSL">
+                                <rect key="frame" x="55" y="190" width="303" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZEf-cm-hF3"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.91764705882352937" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -123,46 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUp-7S-p5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3836" y="-262"/>
-        </scene>
-        <!--Product Detail View Controller2-->
-        <scene sceneID="FZs-8q-gcE">
-            <objects>
-                <viewController storyboardIdentifier="ProductDetailViewController2" id="Pln-yx-AZE" customClass="ProductDetailViewController2" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QaA-l5-N03">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-7Z-6cb">
-                                <rect key="frame" x="104" y="88" width="206" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="31"/>
-                                <color key="textColor" red="0.42352941179999998" green="0.34509803919999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cross " translatesAutoresizingMaskIntoConstraints="NO" id="jW6-85-B6K">
-                                <rect key="frame" x="54" y="201" width="307" height="286"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Warning! This company's products have been tested on animals!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFK-8T-yAn">
-                                <rect key="frame" x="42" y="559" width="330" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4cA-Ml-Swd"/>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.91764705879999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="y2O-af-Prr"/>
-                    <connections>
-                        <outlet property="testLabel" destination="pff-7Z-6cb" id="umO-OT-fow"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kog-CU-WQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2723.1884057971015" y="-263.16964285714283"/>
+            <point key="canvasLocation" x="-3226" y="-260"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jMa-Qt-mLU">
@@ -360,7 +320,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Cross " width="1000" height="1000"/>
         <image name="Screen Shot 2022-07-21 at 4.45.05 PM" width="398" height="392"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
@@ -370,9 +329,6 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
