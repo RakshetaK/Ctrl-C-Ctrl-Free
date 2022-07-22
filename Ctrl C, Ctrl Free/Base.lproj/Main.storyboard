@@ -129,7 +129,7 @@
             <objects>
                 <viewController id="Vsd-vZ-36P" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="knU-J1-hWJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="pYG-ak-Lye"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -267,10 +267,11 @@
         <!--Scan-->
         <scene sceneID="HUQ-Ue-W3w">
             <objects>
-                <navigationController id="Ymr-7h-U5y" sceneMemberID="viewController">
+                <navigationController id="Ymr-7h-U5y" customClass="CameraViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan" image="camera.fill" catalog="system" id="8bK-rg-DK1"/>
+                    <navigationItem key="navigationItem" id="jDZ-m4-OVr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xX0-xR-BV8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -280,6 +281,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jna-g7-byf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2333" y="-1736"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="W9D-cB-B6Y">
+            <objects>
+                <viewController id="Jye-AE-wnr" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCV-Lp-hdf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hiiiiii" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-dj-ZmV">
+                                <rect key="frame" x="94" y="335" width="227" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XU-Vu-y3P">
+                                <rect key="frame" x="148" y="343" width="107" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Begin Scanning">
+                                        <attributes>
+                                            <color key="NSColor" red="0.66812527938036415" green="0.7957904700076941" blue="0.47894432396162218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="AvenirNextCondensed-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-C6-Msv">
+                                <rect key="frame" x="160" y="402" width="82" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5631504021" green="0.63677346589999995" blue="0.38882306010000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Scan">
+                                            <attributes>
+                                                <color key="NSColor" red="0.9263008578559252" green="1" blue="0.89675615564181999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="24" name="AvenirNextCondensed-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ymr-7h-U5y" kind="show" id="xqH-dG-LN1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYk-zd-elB">
+                                <rect key="frame" x="141" y="474" width="130" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5631504021" green="0.63677346589999995" blue="0.38882306010000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Tap for Results">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99192037315139636" green="0.95987780594054783" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="21" name="AvenirNextCondensed-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barcodeTapped:" destination="Jye-AE-wnr" eventType="touchUpInside" id="aDs-Vz-Wh8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rpe-S5-rpJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="barcodeText" destination="3XU-Vu-y3P" id="Xcm-Ot-CmD"/>
+                        <outlet property="textField" destination="Vfr-dj-ZmV" id="DVT-EO-nrI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-bv-Uo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1926.0869565217392" y="-1734.375"/>
         </scene>
         <!--Resources-->
         <scene sceneID="XT0-OM-oWU">
@@ -319,6 +403,9 @@
             <point key="canvasLocation" x="-3226" y="-1736"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xqH-dG-LN1"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2022-07-21 at 4.45.05 PM" width="398" height="392"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>

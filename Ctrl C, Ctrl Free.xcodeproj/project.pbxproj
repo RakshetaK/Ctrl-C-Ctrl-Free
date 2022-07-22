@@ -15,6 +15,9 @@
 		B773E77B2886085A003E2B5B /* Ctrl_C__Ctrl_Free.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B773E7792886085A003E2B5B /* Ctrl_C__Ctrl_Free.xcdatamodeld */; };
 		B773E77D2886085B003E2B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B773E77C2886085B003E2B5B /* Assets.xcassets */; };
 		B773E7802886085B003E2B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B773E77E2886085B003E2B5B /* LaunchScreen.storyboard */; };
+		B7D44FC0288B0F010039F743 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D44FBF288B0F010039F743 /* CameraViewController.swift */; };
+		B7D44FC2288B0F790039F743 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D44FC1288B0F790039F743 /* FirstViewController.swift */; };
+		B7D44FC4288B0FCC0039F743 /* barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D44FC3288B0FCC0039F743 /* barcode.swift */; };
 		DE47532C2888B92200357422 /* SearchPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47532B2888B92200357422 /* SearchPageTableViewController.swift */; };
 		DE47532E2888DCB600357422 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47532D2888DCB600357422 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +33,9 @@
 		B773E77C2886085B003E2B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B773E77F2886085B003E2B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B773E7812886085B003E2B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D44FBF288B0F010039F743 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B7D44FC1288B0F790039F743 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B7D44FC3288B0FCC0039F743 /* barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barcode.swift; sourceTree = "<group>"; };
 		DE47532B2888B92200357422 /* SearchPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageTableViewController.swift; sourceTree = "<group>"; };
 		DE47532D2888DCB600357422 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +54,7 @@
 		B773E7642886085A003E2B5B = {
 			isa = PBXGroup;
 			children = (
+				B7D44FC3288B0FCC0039F743 /* barcode.swift */,
 				B773E76F2886085A003E2B5B /* Ctrl C, Ctrl Free */,
 				B773E76E2886085A003E2B5B /* Products */,
 			);
@@ -68,6 +75,8 @@
 				B773E7722886085A003E2B5B /* SceneDelegate.swift */,
 				B773E7742886085A003E2B5B /* ViewController.swift */,
 				B773E7762886085A003E2B5B /* Main.storyboard */,
+				B7D44FC1288B0F790039F743 /* FirstViewController.swift */,
+				B7D44FBF288B0F010039F743 /* CameraViewController.swift */,
 				6344F0C328889F1600EA3F60 /* resourcesViewController.swift */,
 				DE47532D2888DCB600357422 /* ProductDetailViewController.swift */,
 				DE47532B2888B92200357422 /* SearchPageTableViewController.swift */,
@@ -150,11 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D44FC4288B0FCC0039F743 /* barcode.swift in Sources */,
+				B7D44FC2288B0F790039F743 /* FirstViewController.swift in Sources */,
 				B773E7752886085A003E2B5B /* ViewController.swift in Sources */,
 				6344F0C428889F1600EA3F60 /* resourcesViewController.swift in Sources */,
 				DE47532E2888DCB600357422 /* ProductDetailViewController.swift in Sources */,
 				DE47532C2888B92200357422 /* SearchPageTableViewController.swift in Sources */,
 				B773E77B2886085A003E2B5B /* Ctrl_C__Ctrl_Free.xcdatamodeld in Sources */,
+				B7D44FC0288B0F010039F743 /* CameraViewController.swift in Sources */,
 				B773E7712886085A003E2B5B /* AppDelegate.swift in Sources */,
 				B773E7732886085A003E2B5B /* SceneDelegate.swift in Sources */,
 			);
