@@ -160,7 +160,8 @@ extension CameraViewController : AVCaptureMetadataOutputObjectsDelegate {
                    "0609332833255":"e.l.f. Blush",
                    "0609332833254":"e.l.f. Putty Bronzer",
                    "0609332833253":"e.l.f. Putty Blush",
-                   "5060544973494":"Ciaté London Wonderland Mascara"]
+                   "5060544973494":"Ciaté London Wonderland Mascara",
+                   "079625013115":"Eco Tools makeup brush shampoo"  ]                                              
       
       var keys: Dictionary<UIKey, NSValue>.Keys
       for (key, value) in dict {
