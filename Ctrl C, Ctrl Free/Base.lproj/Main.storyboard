@@ -124,17 +124,22 @@
             </objects>
             <point key="canvasLocation" x="-3226" y="-260"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="jMa-Qt-mLU">
             <objects>
-                <viewController id="Vsd-vZ-36P" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="knU-J1-hWJ">
+                <viewController id="Vsd-vZ-36P" customClass="CameraViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
+                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Scanner..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UdM-7e-u5p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="pYG-ak-Lye"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <navigationItem key="navigationItem" id="1ZN-Za-mbR"/>
+                    <connections>
+                        <outlet property="textLabel" destination="UdM-7e-u5p" id="sVt-98-0KS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luS-qk-pnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,7 +316,7 @@
         <!--Scan-->
         <scene sceneID="HUQ-Ue-W3w">
             <objects>
-                <navigationController id="Ymr-7h-U5y" customClass="CameraViewController" sceneMemberID="viewController">
+                <navigationController id="Ymr-7h-U5y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan" image="camera.fill" catalog="system" id="8bK-rg-DK1"/>
                     <navigationItem key="navigationItem" id="jDZ-m4-OVr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xX0-xR-BV8">
@@ -329,7 +334,7 @@
         <!--First View Controller-->
         <scene sceneID="W9D-cB-B6Y">
             <objects>
-                <viewController id="Jye-AE-wnr" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="Jye-AE-wnr" customClass="FirstViewController" customModule="Ctrl_C__Ctrl_Free" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GCV-Lp-hdf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,9 +361,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-C6-Msv">
-                                <rect key="frame" x="160" y="402" width="82" height="47"/>
+                                <rect key="frame" x="136" y="402" width="130" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85940337181091309" green="0.89932483434677124" blue="0.69290632009506226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.28341676789999998" green="0.20229932149999999" blue="0.11092531949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
@@ -372,14 +378,14 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Vsd-vZ-36P" kind="show" id="6at-v9-dd6"/>
+                                    <segue destination="Vsd-vZ-36P" kind="show" id="WQl-Ta-Opk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYk-zd-elB">
                                 <rect key="frame" x="136" y="479" width="130" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85940337181091309" green="0.89932483434677124" blue="0.69290632009506226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.96445919769999999" green="0.94618122979999997" blue="0.85904942049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.28341676789999998" green="0.20229932149999999" blue="0.11092531949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
@@ -392,22 +398,21 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="barcodeTapped:" destination="Jye-AE-wnr" eventType="touchUpInside" id="aDs-Vz-Wh8"/>
+                                    <action selector="barcodeTapped:" destination="Jye-AE-wnr" eventType="touchUpInside" id="31V-A3-xdl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rpe-S5-rpJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.6593015440786727" green="0.57774177022087259" blue="0.47966776085112189" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="M0u-vY-UtV"/>
                     <connections>
-                        <outlet property="barcodeText" destination="3XU-Vu-y3P" id="Xcm-Ot-CmD"/>
-                        <outlet property="textField" destination="Vfr-dj-ZmV" id="DVT-EO-nrI"/>
+                        <outlet property="barcodeText" destination="3XU-Vu-y3P" id="ilR-er-8Eu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-bv-Uo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2333" y="-1014"/>
+            <point key="canvasLocation" x="-2333.3333333333335" y="-1014.5089285714286"/>
         </scene>
         <!--Resources-->
         <scene sceneID="XT0-OM-oWU">

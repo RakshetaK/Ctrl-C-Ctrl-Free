@@ -168,7 +168,6 @@ extension CameraViewController : AVCaptureMetadataOutputObjectsDelegate {
               if let text: String = textLabel.text{
                   textLabel.text = "Product is cruelty free"
                   self.view.bringSubviewToFront(textLabel)
-                  print(textLabel.text)
               }
               
           }

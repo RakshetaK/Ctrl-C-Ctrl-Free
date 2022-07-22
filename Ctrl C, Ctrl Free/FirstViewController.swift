@@ -16,8 +16,7 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var barcodeText: UILabel!
     
-    @IBOutlet weak var textField: UITextField!
-    
+
     
     
     
