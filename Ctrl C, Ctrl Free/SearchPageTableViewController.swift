@@ -9,7 +9,7 @@ import UIKit
 
 class SearchPageTableViewController: UITableViewController, UISearchBarDelegate {
 
-    let data = ["Afterglow", "Anastasia Beverly Hills", "Bare Minerals", "Bite Beauty", "Burt's Bees", "Cake", "Cloud Cosmetics", "ColourPop", "e.l.f.", "EOS", "Essence", "Fable and Mane", "Glossier", "Juice Beauty", "Kora Organics", "Milani", "Milk Makeup", "Morphe", "NYX", "Pacifica", "Patchology", "Pure Cosmetics", "Rare Beauty", "Raw Sugar", "SeaChi Organics", "Skylar", "Stellar Beauty", "Tarte", "The Balm", "The Body Shop", "Too Faced", "Truly Beauty", "Urban Decay", "Wet N Wild", "MAC"]
+    var data = ["Afterglow", "Anastasia Beverly Hills", "Aveeno", "Bare Minerals", "Benefit", "Bite Beauty", "Burt's Bees", "Cake", "Chapstick", "Clinique", "Cloud Cosmetics", "ColourPop", "Covergirl", "e.l.f.", "EOS", "Essence", "Fable and Mane", "Glossier", "Juice Beauty", "Kora Organics","MAC", "Maybelline", "Milani", "Milk Makeup", "Morphe", "NYX", "Olay", "Pacifica", "Patchology", "Pure Cosmetics", "Rare Beauty", "Raw Sugar", "SeaChi Organics", "Skylar", "Stellar Beauty", "Tarte", "The Balm", "The Body Shop", "Too Faced", "Truly Beauty", "Urban Decay", "Wet N Wild"]
     var filteredData : [String]!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -43,19 +43,71 @@ class SearchPageTableViewController: UITableViewController, UISearchBarDelegate 
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-           if let vc = (storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController) {
-                vc.pImage = UIImage(named: filteredData[indexPath.row])!
-                vc.productLabel = filteredData[indexPath.row]
+        if indexPath.row == 2 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
-        else {
-           if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
-               vc.pLabel = filteredData[indexPath.row]
-               self.navigationController?.pushViewController(vc, animated: true)
+        
+        else if indexPath.row == 4 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
+        
+       else if indexPath.row == 8 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+       else if indexPath.row == 9 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+       else if indexPath.row == 12 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+       else if indexPath.row == 20 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+       else if indexPath.row == 21 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+        else if indexPath.row == 26 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController2") as? ProductDetailViewController2 {
+                vc.pLabel = filteredData[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+        
+        else  {
+            if let vc = (storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController) {
+                 vc.pImage = UIImage(named: filteredData[indexPath.row])!
+                 vc.productLabel = filteredData[indexPath.row]
+                 self.navigationController?.pushViewController(vc, animated: true)
+             }
+         }
+           
     }
     
 
