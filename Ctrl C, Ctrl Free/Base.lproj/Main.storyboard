@@ -173,38 +173,120 @@
         <scene sceneID="0vf-BA-umw">
             <objects>
                 <viewController id="qXI-OX-Hyy" customClass="resourcesViewController" customModule="Ctrl_C__Ctrl_Free" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="hVl-2H-dtU">
+                    <view key="view" contentMode="scaleToFill" id="hVl-2H-dtU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cao-UH-0PQ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elR-6d-yMN">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAv-0N-nQy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZv-9l-Hea">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDo-Ab-uBG">
+                                                <rect key="frame" x="160" y="8" width="100" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hd-ae-gxh">
+                                                <rect key="frame" x="44" y="262" width="331" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Biomedical Research">
+                                                    <color key="baseBackgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="articleButton3:" destination="qXI-OX-Hyy" eventType="touchUpInside" id="R9n-Xc-xaI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-Rb-bjn">
+                                                <rect key="frame" x="44" y="158" width="331" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Be Cruelty-Free Campaign">
+                                                    <color key="baseBackgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="0.69896005794701987" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="articleButton2:" destination="qXI-OX-Hyy" eventType="touchUpInside" id="Fcj-nc-S99"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzs-b1-I7t">
+                                                <rect key="frame" x="44" y="56" width="331" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Animal Testing">
+                                                    <color key="baseBackgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="0.84967404801324509" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="articleButton:" destination="qXI-OX-Hyy" eventType="touchUpInside" id="fCB-uA-rUV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-Yz-krx">
+                                                <rect key="frame" x="44" y="366" width="331" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Save Ralph Video">
+                                                    <color key="baseBackgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="videoButton:" destination="qXI-OX-Hyy" eventType="touchUpInside" id="zUn-Zo-PcZ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrP-6T-uNp">
+                                                <rect key="frame" x="158" y="516" width="102" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtU-yv-g3A">
+                                                <rect key="frame" x="44" y="556" width="331" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign the Be Cruelty-Free pledge">
+                                                    <color key="baseBackgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.74800807119205293" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pledgeButton:" destination="qXI-OX-Hyy" eventType="touchUpInside" id="pIg-mm-PgQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02M-IX-uNc">
+                                                <rect key="frame" x="44" y="658" width="331" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Donate to Humane Society International">
+                                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="donateButton:" destination="qXI-OX-Hyy" eventType="touchUpInside" id="WLh-1s-kED"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="3000" id="Nef-3k-2s4"/>
+                                            <constraint firstAttribute="height" constant="900" id="n4V-u9-7rB"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="AAv-0N-nQy" firstAttribute="top" secondItem="cao-UH-0PQ" secondAttribute="top" id="4iV-bo-dOV"/>
-                                    <constraint firstAttribute="bottom" secondItem="AAv-0N-nQy" secondAttribute="bottom" id="RRE-nf-mSD"/>
-                                    <constraint firstAttribute="trailing" secondItem="AAv-0N-nQy" secondAttribute="trailing" id="Yop-lJ-pLE"/>
-                                    <constraint firstItem="AAv-0N-nQy" firstAttribute="leading" secondItem="cao-UH-0PQ" secondAttribute="leading" id="qne-wW-ysQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="IZv-9l-Hea" secondAttribute="bottom" id="2cA-wy-g8m"/>
+                                    <constraint firstItem="IZv-9l-Hea" firstAttribute="top" secondItem="elR-6d-yMN" secondAttribute="top" id="Zeh-7e-eh4"/>
+                                    <constraint firstAttribute="trailing" secondItem="IZv-9l-Hea" secondAttribute="trailing" id="aYz-GP-Fn0"/>
+                                    <constraint firstItem="IZv-9l-Hea" firstAttribute="leading" secondItem="elR-6d-yMN" secondAttribute="leading" id="go0-nv-cgY"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sQl-xb-bTE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cao-UH-0PQ" firstAttribute="bottom" secondItem="sQl-xb-bTE" secondAttribute="bottom" id="1yo-WO-T2g"/>
-                            <constraint firstItem="cao-UH-0PQ" firstAttribute="top" secondItem="sQl-xb-bTE" secondAttribute="top" id="T1f-e7-Na5"/>
-                            <constraint firstItem="AAv-0N-nQy" firstAttribute="height" secondItem="hVl-2H-dtU" secondAttribute="height" multiplier="3.34821" id="dJQ-vr-Nfe"/>
-                            <constraint firstItem="cao-UH-0PQ" firstAttribute="leading" secondItem="sQl-xb-bTE" secondAttribute="leading" id="h1t-Bi-Px9"/>
-                            <constraint firstItem="cao-UH-0PQ" firstAttribute="trailing" secondItem="sQl-xb-bTE" secondAttribute="trailing" id="n3z-IM-4Ag"/>
-                            <constraint firstItem="AAv-0N-nQy" firstAttribute="width" secondItem="hVl-2H-dtU" secondAttribute="width" id="uCd-9W-fye"/>
+                            <constraint firstItem="elR-6d-yMN" firstAttribute="bottom" secondItem="sQl-xb-bTE" secondAttribute="bottom" id="3yX-It-d85"/>
+                            <constraint firstItem="elR-6d-yMN" firstAttribute="leading" secondItem="sQl-xb-bTE" secondAttribute="leading" id="4ce-dH-Szf"/>
+                            <constraint firstItem="elR-6d-yMN" firstAttribute="top" secondItem="sQl-xb-bTE" secondAttribute="top" id="Gy3-0L-EGX"/>
+                            <constraint firstItem="IZv-9l-Hea" firstAttribute="height" secondItem="hVl-2H-dtU" secondAttribute="height" multiplier="1.00446" id="Tx0-6g-n3y"/>
+                            <constraint firstItem="elR-6d-yMN" firstAttribute="trailing" secondItem="sQl-xb-bTE" secondAttribute="trailing" id="VQf-X4-fYy"/>
+                            <constraint firstItem="IZv-9l-Hea" firstAttribute="width" secondItem="hVl-2H-dtU" secondAttribute="width" id="mmp-IW-oPo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Resources" id="1oP-0f-ZWj"/>
@@ -276,6 +358,9 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
